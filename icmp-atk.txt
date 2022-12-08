@@ -1,0 +1,61 @@
+!interface S0/0/0
+access-list 140 allow icmp any any echo-reply
+access-list 140 allow icmp any any source-quench
+access-list 140 allow icmp any any unreachable
+access-list 140 deny icmp any any
+access-list 140 permit ip any any
+!interface S0/0/1
+access-list 140 allow icmp any any echo-reply
+access-list 140 allow icmp any any source-quench
+access-list 140 allow icmp any any unreachable
+access-list 140 deny icmp any any
+access-list 140 permit ip any any
+!interface G0/0.10
+access-list 120 permit icmp 172.16.10.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.10.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.10.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.10.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any
+!interface G0/0.20
+access-list 120 permit icmp 172.16.20.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.20.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.20.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.20.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any
+!interface G0/0.40
+access-list 120 permit icmp 172.16.40.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.40.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.40.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.40.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any
+!interface G0/0.60
+access-list 120 permit icmp 172.16.60.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.60.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.60.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.60.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any
+!interface G0/0.80
+access-list 120 permit icmp 172.16.80.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.80.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.80.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.80.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any
+!interface G0/0.100
+access-list 120 permit icmp 172.16.100.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.100.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.100.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.100.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any
+!interface G0/0.120
+access-list 120 permit icmp 172.16.120.0 0.0.0.255 any echo
+access-list 120 permit icmp 172.16.120.0 0.0.0.255 any parameter-problem
+access-list 120 permit icmp 172.16.120.0 0.0.0.255 any packet-too-big
+access-list 120 permit icmp 172.16.120.0 0.0.0.255 any source-quench
+access-list 120 deny icmp any any
+access-list 120 permit ip any any

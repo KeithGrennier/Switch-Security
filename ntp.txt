@@ -1,0 +1,3 @@
+
+clock set 04:22:44 Dec 08 2022
+ntp server 172.16.100.11

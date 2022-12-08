@@ -1,0 +1,24 @@
+!interface S0/0/0
+access-list 140 deny host 0.0.0.0 any
+access-list 140 deny ip 10.0.0.0 0.255.255.255 any
+access-list 140 deny ip 127.0.0.0 0.255.255.255 any
+access-list 140 deny ip 172.16.0.0 0.15.255.255 any
+access-list 140 deny ip 192.168.0.0 0.0.255.255 any
+access-list 140 deny ip 224.0.0.0 15.255.255.255 any
+access-list 140 deny host 255.255.255.255 any
+!interface S0/0/1
+access-list 140 deny host 0.0.0.0 any
+access-list 140 deny ip 10.0.0.0 0.255.255.255 any
+access-list 140 deny ip 127.0.0.0 0.255.255.255 any
+access-list 140 deny ip 172.16.0.0 0.15.255.255 any
+access-list 140 deny ip 192.168.0.0 0.0.255.255 any
+access-list 140 deny ip 224.0.0.0 15.255.255.255 any
+access-list 140 deny host 255.255.255.255 any
+!interface G0/0
+access-list 120 permit ip 172.16.10.0 0.0.0.255 any
+access-list 120 permit ip 172.16.20.0 0.0.0.255 any
+access-list 120 permit ip 172.16.40.0 0.0.0.255 any
+access-list 120 permit ip 172.16.60.0 0.0.0.255 any
+access-list 120 permit ip 172.16.80.0 0.0.0.255 any
+access-list 120 permit ip 172.16.100.0 0.0.0.255 any
+access-list 120 permit ip 172.16.120.0 0.0.0.255 any

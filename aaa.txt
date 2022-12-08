@@ -1,0 +1,13 @@
+
+aaa new-model
+radiuse server Server-R
+address ipv4 172.16.100.14 auth-port 1812 acct-port 1813
+exit
+aaa authentication login default group radius Server-R local-case
+ip access-list standard VTY_ACCESS
+permit 172.16.100.14
+deny any
+exit
+line vty 0 15
+access-class VTY_ACCESS
+end

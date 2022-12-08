@@ -1,0 +1,5 @@
+
+service timestamps log datetime
+logging 172.16.100.49.1
+logging trap informational
+logging source-interfacelo0
