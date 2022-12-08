@@ -1,0 +1,22 @@
+! secure exec mode
+enable algorithm-type scrypt cisco
+line con 0
+password cisco
+transport input ssh
+login local
+exec-timeout 5 30
+!
+line vty 0 15
+password cisco
+transport input ssh
+login local
+exec-timeout 5 30
+! encrypt passwords
+service password-encryption
+! additional password security
+service password-encryption
+security passwords min-length 8
+login block-for 120 attempts 3 within 60
+! banners
+banner motd 
+hostname VaultSwitch

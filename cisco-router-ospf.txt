@@ -1,0 +1,8 @@
+
+key chain vaultKey120822
+key 3
+key-string dK487YpnHYmfUvsM
+crypto-algorithm hmac-sha-512
+send-lifetime start-time infinite
+interface 0/1
+ip ospf authentication key-chain vaultKey120822
