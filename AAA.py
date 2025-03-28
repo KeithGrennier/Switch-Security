@@ -9,7 +9,7 @@ permitIP=serverIP
 accessListName='VTY_ACCESS'
 aaa=f"""
 aaa new-model
-radiuse server {serverName}
+radius server {serverName}
 address ipv4 {serverIP} auth-port {authPort} acct-port {acctPort}
 exit
 aaa authentication login default group radius {serverName} local-case
